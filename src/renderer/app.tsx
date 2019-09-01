@@ -3,7 +3,8 @@ import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
 
-import Application from './components/Application';
+// tslint:disable-next-line: import-name
+import Application from './components/';
 import store from './store';
 
 // Create main element

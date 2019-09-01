@@ -1,0 +1,33 @@
+
+
+:root div{
+	height : 100vh;
+	--focus-color: #D1D100;
+	--sec-color: #5F5F5A;
+	--items-color: #FFFFFF;
+	--background-color: #AAAAAA;
+}
+
+
+.header {
+	grid-area: header;
+	background-color: var(--sec-color)
+}
+
+.sidebar {
+	grid-area: sidebar;
+	background-color: var(--sec-color)
+}
+
+.body {
+	grid-area: body;
+	background-color: var(--background-color)
+}
+
+.burger {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 10% 90%;
+	grid-template-rows: 5% 95%;
+	grid-template-areas: "sidebar header" "sidebar body"
+}

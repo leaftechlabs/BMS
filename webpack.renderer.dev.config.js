@@ -14,7 +14,8 @@ module.exports = merge.smart(baseConfig, {
         compress: true,
         noInfo: true,
         stats: 'errors-only',
-        inline: true,
+		inline: true,
+		disableHostCheck: true, //I added it
         hot: true,
         headers: { 'Access-Control-Allow-Origin': '*' },
         historyApiFallback: {

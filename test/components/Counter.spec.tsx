@@ -5,7 +5,8 @@ import Counter from '../../src/renderer/components/Counter';
 
 describe('Counter component', () => {
     it('renders correctly', () => {
-        const tree = renderer
+		const tree = renderer
+			//@ts-ignore
             .create(<Counter value={1} incrementValue={jest.fn()} decrementValue={jest.fn()} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
