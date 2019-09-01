@@ -1,7 +1,4 @@
-
-
-:root div{
-	height : 100vh;
+:root {
 	--focus-color: #D1D100;
 	--sec-color: #5F5F5A;
 	--items-color: #FFFFFF;
@@ -16,18 +13,96 @@
 
 .sidebar {
 	grid-area: sidebar;
-	background-color: var(--sec-color)
+	background-color: var(--sec-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+	.sidebar .option {
+		width: 100%;
+		height: auto;
+		line-height: 50px;
+		background-color: var(--focus-color);
+		text-align: center;
+		margin-top: 5px;
+		color: var(--items-color);
+	}
+	
 
 .body {
 	grid-area: body;
-	background-color: var(--background-color)
+	background-color: var(--focus-color)
 }
 
+	.page {
+		height: 95%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fffef0;
+		margin: 10px;
+		padding: 10px;
+		box-shadow: -1px -1px 6px #696969;
+		border-radius: 0px 10px 10px 0px;	}
+
 .burger {
-	height: 100%;
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 10% 90%;
 	grid-template-rows: 5% 95%;
-	grid-template-areas: "sidebar header" "sidebar body"
+	grid-template-areas: "sidebar body" "sidebar body"
+}
+
+.section {
+    width: 85%;
+    border: 1px solid #5F5F5A;
+	padding: 20px;
+	margin: 10px;
+}
+
+.title {
+	text-align: center;
+	font-size: 2em;
+	margin: 20px;
+}
+
+
+.newtable {
+	display: flex;
+	flex-direction: column;
+	overflow-x: auto;
+}
+
+.newtable-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+	.newtable-row.heading {
+		font-weight: bold;
+		background-color: #f0f0f0 
+	}
+
+.newtable-row div {  /* Cell*/
+    width: 20%;
+    padding: 5px;
+    border-bottom: 1px solid #bebebe;
+    min-width: 150px;
+	border-right: 1px solid #bebebe;
+	overflow-x: auto; 
+}
+
+.newtable-row :last-child {
+	border-right: none
+}
+
+.row {
+	flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2px;
+    width: 100%;
 }

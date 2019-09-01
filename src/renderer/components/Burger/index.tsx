@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import AccountsPage from '../../modules/Accounts'
 import './style.css'
 
 class Burger extends Component {
@@ -7,18 +7,22 @@ class Burger extends Component {
 		return <div className="burger">
 
 			<div className="sidebar">
-				<div>
-					Hello
+
+				<div className="option">
+					Accounts
+				</div>
+				<div className="option">
+					Inventory
+				</div>
+				<div className="option">
+					Stats
 				</div>
 			</div>
 			<div className="header">
-				<div>
-					Header
-				</div>
 			</div>
 			<div className="body">
-				<div>
-					Body
+				<div className="page">
+					<AccountsPage/>
 				</div>
 			</div>
 
