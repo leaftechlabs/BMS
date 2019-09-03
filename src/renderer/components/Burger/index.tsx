@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AccountsPage from '../../modules/Accounts'
 import './style.css'
+import VoucherPage from '../../modules/Accounts/Voucher';
 
 class Burger extends Component {
 	render() {
@@ -22,7 +23,8 @@ class Burger extends Component {
 			</div>
 			<div className="body">
 				<div className="page">
-					<AccountsPage/>
+					<VoucherPage/>
+					{/* <AccountsPage/> */}
 				</div>
 			</div>
 

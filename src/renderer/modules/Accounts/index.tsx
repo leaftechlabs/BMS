@@ -10,8 +10,8 @@ class AccountsPage extends Component {
 				<div className="newtable-row heading">
 					<div>Id</div>
 					<div>Date</div>
-					<div>Credit</div>
 					<div>Debit</div>
+					<div>Credit</div>
 					<div>Voucher No</div>
 				</div>
 				<div className="newtable-row">
