@@ -44,7 +44,9 @@
 		margin: 10px;
 		padding: 10px;
 		box-shadow: -1px -1px 6px #696969;
-		border-radius: 0px 10px 10px 0px;	}
+		border-radius: 0px 10px 10px 0px;
+		overflow-y: auto;
+	}
 
 .burger {
 	height: 100vh;
