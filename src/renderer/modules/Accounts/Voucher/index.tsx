@@ -16,6 +16,24 @@ interface P {
 
 }
 
+/**
+ * 1) chart of accounts
+ * 
+ * Cash Payment:
+ * 	date, company name 
+ * pay to,
+ * debit,
+ * credit
+ * 
+ * Bank Payment:
+ * date, payto, bank name,
+ * chevcck no, check date,
+ * debit, credit,
+ * 
+ */
+
+
+
 export default class VoucherPage extends Component<P , S> {
 	
 	constructor(props: P) {
@@ -105,8 +123,83 @@ export default class VoucherPage extends Component<P , S> {
 						<option> Bank Receipt</option>
 					</select>
 				</div>
+				<div className="row">
+					<label>Search Code</label>
+					<input type="text" />
+				</div>
+			</div>
+
+			<div className="section">
+
+				<div className="title">
+					Cash Payment
+				</div>
+				<div className="row">
+					<label>Title </label>
+					<div> Entertainment </div>
+				</div>
+				<div className="row">
+					<label>Date</label>
+					<div>22-22-2020</div>
+				</div>
+				<div className="row">
+					<label>Company Name</label>
+					<div>ABC Company</div>
+				</div>
+				<div className="row">
+					<label>Pay To:</label>
+					<input type="text" />
+				</div>
+				<div className="row">
+					<label>Debit:</label>
+					<input type="number" />
+				</div><div className="row">
+					<label>Credit:</label>
+					<input type="number" />
+				</div>
+				<div className="button" style={{ backgroundColor: "grey", marginTop: "5px", textAlign:"center", color: "white", borderRadius:"2px" }}> Add </div>
 			</div>
 			<div className="section">
+
+			<div className="title">
+				Bank Payment
+			</div>
+			<div className="row">
+				<label>Title </label>
+				<div> Entertainment </div>
+			</div>
+			<div className="row">
+				<label>Date</label>
+				<div>22-22-2020</div>
+			</div>
+			<div className="row">
+				<label>Company Name</label>
+				<div>ABC Company</div>
+			</div>
+			<div className="row">
+				<label>Pay To:</label>
+				<input type="text" />
+			</div>
+			<div className="row">
+				<label>Bank Name</label>
+				<input type="text" />
+				</div>
+				<div className="row">
+				<label>Check No</label>
+				<input type="text" />
+			</div>
+			<div className="row">
+				<label>Debit:</label>
+				<input type="number" />
+			</div><div className="row">
+				<label>Credit:</label>
+				<input type="number" />
+			</div>
+			<div className="button" style={{ backgroundColor: "grey", marginTop: "5px", textAlign:"center", color: "white", borderRadius:"2px" }}> Add </div>
+			</div>
+
+
+			{/* <div className="section">
 				<div className="row">
 					<label>Name</label>
 					<input type="text" onChange={(e) => this.setState({ name: e.target.value })}/>
@@ -131,8 +224,8 @@ export default class VoucherPage extends Component<P , S> {
 							<label>Email</label>
 							<div>{i.email}</div>
 						</div>
-					</div>)
-			}
+					</div>) }*/}
+			
 		</div>
 	}
 }
